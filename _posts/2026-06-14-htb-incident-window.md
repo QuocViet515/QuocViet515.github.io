@@ -17,7 +17,6 @@ tags:
 ## Incident Window — HTB
 
 <aside>
-<img src="https://app.notion.comi" alt="https://app.notion.comi" width="40px" />
 
 **Mục tiêu:** Đếm số “cửa sổ thời gian” dài **W** giây có số sự kiện **S** (Suspicious) **≥ K**.
 
