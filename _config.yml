@@ -22,9 +22,9 @@ title_separator          : "-"
 subtitle                 : "Nơi chia sẻ kiến thức và trải nghiệm"
 name                     : "Quốc Việt"
 description              : "Chào mừng bạn đến với blog cá nhân của tôi."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+url                      : "https://quocviet515.github.io"
+baseurl                  : ""
+repository               : "QuocViet515/QuocViet515.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -269,7 +269,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
 whitelist:
