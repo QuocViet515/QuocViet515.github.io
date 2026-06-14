@@ -1,6 +1,6 @@
 ---
 title: "HTB Writeup: Incident Window"
-excerpt: "Giải quyết bài toán đếm cửa sổ thời gian (Sliding Window) trong thử thách Incident Window trên Hack The Box."
+excerpt: "Giải quyết bài toán đếm cửa sổ thời gian (Sliding Window) trong thử thách Incident Window trên Hack Thê Box."
 header:
   overlay_image: /assets/images/posts/htb-incident-window/Screenshot_2026-05-16_092345.png
   overlay_filter: 0.5
@@ -17,8 +17,9 @@ mathjax: true
 
 ## Incident Window — HTB
 
-**Mục tiêu:** Đếm số “cửa sổ thời gian” dài **W** giây có số sự kiện **S** (Suspicious) **≥ K**.
-{: .notice--info}
+<div class="notice--info">
+  <strong>Mục tiêu:</strong> Đếm số “cửa sổ thời gian” dài <strong>W</strong> giây có số sự kiện <strong>S</strong> (Suspicious) <strong>&ge; K</strong>.
+</div>
 
 ### Bài toán
 
