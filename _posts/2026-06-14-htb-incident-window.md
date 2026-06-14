@@ -12,23 +12,25 @@ tags:
   - Python
   - Sliding Window
   - Algorithm
+mathjax: true
 ---
 
 ## Incident Window — HTB
 
 **Mục tiêu:** Đếm số “cửa sổ thời gian” dài **W** giây có số sự kiện **S** (Suspicious) **≥ K**.
+{: .notice--info}
 
 ### Bài toán
 
 - **Vấn đề:** Nếu duyệt từng sự kiện và kiểm tra mọi khung thời gian chứa nó (cách ngây thơ/naive $O(N^2)$), chương trình sẽ rất chậm vì có thể có tới **50.000** sự kiện.
-- **Ràng buộc quan trọng:** mốc thời gian lớn nhất **ts ≤ 10.000**.
+- **Ràng buộc quan trọng:** mốc thời gian lớn nhất $ts \le 10.000$.
 
 ### Giải pháp — Sliding Window (Cửa sổ trượt)
 
-Vì **Max\_TS = 10.000**, ta có thể đếm số sự kiện **S** theo từng giây bằng một mảng:
+Vì $Max\_TS = 10.000$, ta có thể đếm số sự kiện **S** theo từng giây bằng một mảng:
 
 ```python
-s_counts
+s_counts = [0] * (MAX_TS + 1)
 ```
 
 - Với mỗi sự kiện `S` ở giây `X`: tăng `s_counts[X] += 1`.
@@ -86,4 +88,4 @@ if __name__ == '__main__':
     main()
 ```
 
-![Screenshot 2026-05-16 092345.png](/assets/images/posts/htb-incident-window/Screenshot_2026-05-16_092345.png)
+![Giải pháp Incident Window](/assets/images/posts/htb-incident-window/Screenshot_2026-05-16_092345.png)

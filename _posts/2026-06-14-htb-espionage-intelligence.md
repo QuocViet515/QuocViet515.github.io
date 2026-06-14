@@ -13,6 +13,7 @@ tags:
   - AI Agent
   - RCE
   - Prompt Injection
+mathjax: true
 ---
 
 ## LAB WRITE-UP: ESPIONAGE INTELLIGENCE
