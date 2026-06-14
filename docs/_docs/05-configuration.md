@@ -808,7 +808,7 @@ The value is set in the `author` block of `_config.yml` (or in `_data/authors.ym
 
 ```yaml
 author:
-  name: "Your Name"
+  name: "Quoc Viet ( P1enix )"
   fediverse: "@you@instance.social"
 ```
 
@@ -926,7 +926,7 @@ Used as the defaults for defining what appears in the author sidebar.
 
 ```yaml
 author:
-  name     : "Your Name"
+  name     : "Quoc Viet ( P1enix )"
   avatar   : "/assets/images/bio-photo.jpg"
   bio      : "My awesome biography constrained to a sentence or two goes here."
   location : "Somewhere, USA"
@@ -943,7 +943,7 @@ Author links are all optional, include the ones you want visible under the `auth
 
 ```yaml
 author:
-  name: "Your Name"
+  name: "Quoc Viet ( P1enix )"
   avatar: "/assets/images/bio-photo.jpg"
   bio: "I am an **amazing** person." # Note: Markdown is allowed
   location: "Somewhere"
