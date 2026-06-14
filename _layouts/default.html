@@ -11,8 +11,8 @@
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-    {% include_cached skip-links.html locale=locale %}
-    {% include_cached masthead.html locale=locale %}
+    {% include skip-links.html locale=locale %}
+    {% include masthead.html locale=locale %}
 
     <div class="initial-content">
       {{ content }}
@@ -21,14 +21,14 @@
 
     {% if site.search == true %}
       <div class="search-content">
-        {% include_cached search/search_form.html locale=locale %}
+        {% include search/search_form.html locale=locale %}
       </div>
     {% endif %}
 
     <div id="footer" class="page__footer">
       <footer>
         {% include footer/custom.html %}
-        {% include_cached footer.html locale=locale %}
+        {% include footer.html locale=locale %}
       </footer>
     </div>
 
