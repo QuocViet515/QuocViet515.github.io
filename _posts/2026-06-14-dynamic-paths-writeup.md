@@ -39,10 +39,12 @@ Gọi $DP[r][c]$ là tổng chi phí nhỏ nhất để đi từ điểm xuất 
 
 $$DP[r][c] = \min(DP[r-1][c], DP[r][c-1]) + Grid[r][c]$$
 
-![Minh họa quy hoạch động ma trận](https://media.geeksforgeeks.org/wp-content/uploads/20230221124610/Minimum-path-sum.png)
+![Minh họa quy hoạch động ma trận](/assets/images/mini_path_sum/minimum-path-sum-e600e435bba58a66b2c3544ab3b7f73a.webp)
 
 *Hình 1: Minh họa cách tính tổng đường đi ngắn nhất bằng DP.*
 
+
+Nguồn: [Minimum Path Sum](https://rustp.org/dynamic-programming/minimum-path-sum/)
 ## 3. Tự động hóa với Pwntools
 
 Vì phải giải quyết liên tục 100 vòng, việc tính tay là bất khả thi do giới hạn thời gian (timeout) của server. Chúng ta sẽ dùng thư viện `pwntools` trong Python để kết nối socket, bắt gói tin, tính toán và gửi trả đáp án.
