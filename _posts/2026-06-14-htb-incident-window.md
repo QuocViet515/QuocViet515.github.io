@@ -16,11 +16,7 @@ tags:
 
 ## Incident Window — HTB
 
-<aside>
-
 **Mục tiêu:** Đếm số “cửa sổ thời gian” dài **W** giây có số sự kiện **S** (Suspicious) **≥ K**.
-
-</aside>
 
 ### Bài toán
 
