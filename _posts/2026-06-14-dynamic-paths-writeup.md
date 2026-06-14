@@ -2,9 +2,9 @@
 title: "CTF Writeup: Dynamic Paths - Thoát Khỏi Behemoth"
 excerpt: "Bài viết chia sẻ cách áp dụng thuật toán Quy hoạch động (Dynamic Programming) và Pwntools để tự động hóa và giải quyết thử thách lập trình socket."
 header:
-  overlay_image: /assets/images/catppuccin_mocha-skin-archive-large.png
+  overlay_image: https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2070
   overlay_filter: 0.5
-  teaser: /assets/images/catppuccin_mocha-skin-archive-large.png
+  teaser: https://media.geeksforgeeks.org/wp-content/uploads/20221101131105/MinimumPathSum.png
 categories:
   - CTF Writeup
 tags:
@@ -12,6 +12,7 @@ tags:
   - Pwntools
   - Dynamic Programming
   - Socket
+mathjax: true
 ---
 
 Chào các bạn, bài viết này sẽ trình bày writeup cho challenge **Dynamic Paths**. Đây là một bài tập kết hợp khá thú vị giữa kiến thức về cấu trúc dữ liệu, thuật toán tìm đường đi tối ưu và kỹ năng lập trình tương tác qua socket. 
@@ -38,7 +39,9 @@ Gọi $DP[r][c]$ là tổng chi phí nhỏ nhất để đi từ điểm xuất 
 
 $$DP[r][c] = \min(DP[r-1][c], DP[r][c-1]) + Grid[r][c]$$
 
-![Minh họa quy hoạch động ma trận](/assets/images/catppuccin_mocha-skin-archive-large.png)
+![Minh họa quy hoạch động ma trận](https://media.geeksforgeeks.org/wp-content/uploads/20230221124610/Minimum-path-sum.png)
+
+*Hình 1: Minh họa cách tính tổng đường đi ngắn nhất bằng DP.*
 
 ## 3. Tự động hóa với Pwntools
 
@@ -103,3 +106,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+```
